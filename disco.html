@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>disco.html</title>
+   <link rel = "stylesheet" type = "text/css" href = "./resources/css/disco.css" />
+</head>
+
+<body>
+   <button id = "disco" onclick="switchToVideo(); discVid.play"></button>
+   
+   <a href = "main.html">
+      <button id="btn3"><img id = "whale" src = "./resources/media/whale_emoji.png" alt = "Whale"></button>
+   </a>
+   
+   <video loop id = "video" onclick="switchToButton()" style="display: none;">
+      <source src="./resources/media/september.mp4" type="video/mp4">
+      The highway montage is not working :(
+   </video>
+    
+   <script>
+
+      function switchToVideo(){
+         document.getElementById('video').style.display = "block";
+         document.getElementById('btn3').style.display = "none";
+         video.play();
+      }
+      
+      function switchToButton(){
+         document.getElementById('video').style.display = "none"
+         document.getElementById('btn3').style.display = "initial"
+      }
+      
+   </script>
+</body>
+</html>

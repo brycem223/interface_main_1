@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>skirt.html</title>
+   
+   <link rel = "stylesheet" type = "text/css" href = "./resources/css/skirt.css" />
+   
+   <style>
+      body {
+         background-color: black;
+      }
+   </style>
+</head>
+
+<body>
+   <a>
+      <video id = "video" loop>
+         <source src="./resources/media/cars.mp4" type="video/mp4">
+         The highway montage is not working :(
+      </video>
+   </a>
+    
+   <a href = "main.html"><button class = "btn"></button></a>
+    
+   <button type="button" id="play_button"></button>
+    
+   <script>
+      var playButton = document.getElementById("play_button");
+      // Event listener for the play/pause button
+      playButton.addEventListener("click", function() {
+         if (video.paused == true) {
+            // Play the video
+            video.play();
+         } else {
+            // Pause the video
+            video.pause();
+         }
+      });
+   </script>
+</body>
+</html>

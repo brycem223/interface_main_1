@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>beep.html</title>
+   
+   <link rel = "stylesheet" type = "text/css" href = "./resources/css/beep.css" />
+   
+   <script>
+      function startTime() {
+         var today = new Date();
+         var h = today.getHours();
+         if (h > 12) {h = h - 12};
+         var m = today.getMinutes();
+         m = checkTime(m);
+         document.getElementById('txt').innerHTML = h + ":" + m;
+         var t = setTimeout(startTime, 500);
+      }
+      
+      function checkTime(i) {
+         if (i < 10) {i = "0" + i};
+         return i;
+      }
+   </script>
+</head>
+  
+<body onload = "startTime()">
+   <div id = "txt"></div>
+   
+   <button class = "btn" onclick="car.play();" type="button"><img src="./resources/media/Mack.jpg"></button>
+   <button class = "btn" onclick="uni.play();" type = "button"><img src="./resources/media/unicorn.png"></button>
+   <button class = "btn" onclick="wsl.play();" type="button"><img src="./resources/media/whistle.png"></button>
+   <button class = "btn" onclick="wpr.play();" type="button"><img src="./resources/media/rose.png"></button>
+   <button class = "btn" onclick="vrm.play();" type="button"><img src="./resources/media/smoke.png"></button>
+   <button class = "btn" onclick="bby.play();" type="button"><img src="./resources/media/baby.png"></button>
+   <button class = "btn" onclick="ant.play();" type="button"><img src="./resources/media/ant.png"></button>
+   <button class = "btn" onclick="bgl.play();" type="button"><img src="./resources/media/bugle.jpg"></button>
+   <button class = "btn" onclick="doh.play();" type="button"><img src="./resources/media/duck.png"></button>
+   <button class = "btn" onclick="hrn.play();" type="button"><img src="./resources/media/bike_horn.jpg"></button>
+   <button class = "btn" onclick="chg.play();" type="button"><img class = "img2" src="./resources/media/bolt.jpg"></button>
+   
+   <button class = "btn" onclick="car.pause(); uni.pause(); wsl.pause(); wpr.pause(); vrm.pause(); bby.pause(); ant.pause(); bgl.pause(); doh.pause(); hrn.pause(); chg.pause(); bdm.pause(); ice.pause(); cof.pause(); jeo.pause(); mad.pause();" type="button"><img src="./resources/media/turtle.png"></button>
+   
+   <button class = "btn" onclick="bdm.play();" type="button"><img src="./resources/media/badumtish.gif"></button>
+   <button class = "btn" onclick="ice.play();" type="button"><img src="./resources/media/ice_cream.png"></button>
+   <button class = "btn" onclick="cof.play();" type="button"><img src="./resources/media/fire.png"></button>
+   <button class = "btn" onclick="jeo.play();" type="button"><img src="./resources/media/timer.png"></button>
+   <button class = "btn" onclick="mad.play();" type="button"><img src="./resources/media/angry.png"></button>
+   <button class = "btn" type="button" onclick="question();"><img class = "img1" src="./resources/media/question.png"></button>
+   
+   <a href = "main.html"><button class = "btn4" type = "button"><img src = "./resources/media/back.png" id = "back"></button></a>
+   
+   <script>
+      var car = new Audio("./resources/media/cars.mp3");
+      var uni = new Audio("./resources/media/cars.mp3");
+      var wsl = new Audio("./resources/media/cars.mp3");
+      var wpr = new Audio("./resources/media/cars.mp3");
+      var vrm = new Audio("./resources/media/cars.mp3");
+      var bby = new Audio("./resources/media/cars.mp3");
+      var ant = new Audio("./resources/media/cars.mp3");
+      var bgl = new Audio("./resources/media/cars.mp3");
+      var doh = new Audio("./resources/media/cars.mp3");
+      var hrn = new Audio("./resources/media/cars.mp3");
+      var chg = new Audio("./resources/media/cars.mp3");
+      var bdm = new Audio("./resources/media/cars.mp3");
+      var ice = new Audio("./resources/media/cars.mp3");
+      var cof = new Audio("./resources/media/cars.mp3");
+      var jeo = new Audio("./resources/media/cars.mp3");
+      var mad = new Audio("./resources/media/cars.mp3");
+      
+      function question() {
+         var random = Math.ceil(Math.random() * 16);
+         if (random = 1) {car.play()};
+         if (random = 2) {uni.play()};
+         if (random = 3) {wsl.play()};
+         if (random = 4) {wpr.play()};
+         if (random = 5) {wrm.play()};
+         if (random = 6) {bby.play()};
+         if (random = 7) {ant.play()};
+         if (random = 8) {bgl.play()};
+         if (random = 9) {doh.play()};
+         if (random = 10) {hrn.play()};
+         if (random = 11) {chg.play()};
+         if (random = 12) {bdm.play()};
+         if (random = 13) {ice.play()};
+         if (random = 14) {cof.play()};
+         if (random = 15) {jeo.play()};
+         if (random = 16) {mad.play()};
+      }
+   </script>
+</body>
+</html>
