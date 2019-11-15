@@ -1,0 +1,77 @@
+html * {
+   cursor: none;
+}
+
+body {
+   color: black;
+   background-image: url("../media/stars.png");
+   background-size: 800px 480px;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+#txt  {
+   font-size: 36px;
+   font-family: monospace;
+   font-weight: bold;
+   text-align: center;
+   color: white;
+   position: relative;
+   top: 20px;
+}
+
+.btn {
+   position: relative;
+   top: 20px;
+   height: 80px;
+   width: 80px;
+   border-radius: 40px;
+   border-width: 5px;
+   border-color: #b8b8b8;
+   margin-left: 41px;
+   margin-top: 41px;
+   background-color: white;
+}
+
+.btn:active {
+   background-color: #c4c4c4;
+}
+
+button:focus {
+   outline: none;
+}
+
+img {
+   height: 50px;
+   width: 50px;
+   position: relative;
+   top: 1px;
+   
+}
+
+.img1 {
+   left: 2px;
+}
+
+.btn4 {
+   height: 60px;
+   width: 60px;
+   border-radius: 37px;
+   border-width: 1px;
+   border-color: white;
+   border-style: solid;
+   position: absolute;
+   background-color: #d95555;
+   top: 13px;
+   left: 13px;
+}
+
+#back {
+   height: 37px;
+   width: 45px;
+   position: absolute;
+   left: 5px;
+   top: 8px;
+}

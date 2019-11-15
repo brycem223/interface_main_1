@@ -1,0 +1,54 @@
+html * {
+  cursor: none;
+}
+
+body {
+   color: black;
+   background-image: url("../media/disco_stars.gif");
+   background-size: 800px 480px;
+}
+
+#video {
+   height: 459px;
+   width: 765px;
+}
+
+#video:focus {
+   outline: none;
+}
+
+#disco:focus {
+   outline: none;
+}
+
+#disco {
+   border-width: 0px;
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 480px;
+   width: 800px;
+}
+
+#btn3:focus {
+   outline: none;
+}
+
+#btn3 {
+   height: 120px;
+   width: 120px;
+   position: fixed;
+   left: 340px;
+   top: 180px;
+   background-color: #dd45ff;
+   border-style: double;
+   border-color: #6aff45;
+   border-width: 6px;
+   border-radius: 60px;
+}
+
+#whale {
+   height: 80px;
+   width: 80px;
+}

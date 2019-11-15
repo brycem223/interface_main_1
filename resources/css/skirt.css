@@ -1,0 +1,39 @@
+html * {
+   cursor: none;
+}
+
+.btn {
+   height: 120px;
+   width: 200px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border: none;
+   background-color: transparent;
+}
+
+.btn:focus {
+   outline: none;
+}
+
+#video {
+   height: 459px;
+   width: 765px;
+   position: fixed;
+   right: 15px;
+   top: 11px;
+}
+
+#play_button {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   height: 360px;
+   width: 600px;
+   border: none;
+   background-color: transparent;
+}
+
+#play_button:focus {
+   outline: none;
+}
