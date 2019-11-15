@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>main.html</title>
+   <link rel = "stylesheet" type = "text/css" href = "./resources/css/main.css" />
+   <script>
+      var audTog = 0;
+      var audBtn = "Exterior";
+      function startTime() {
+         var today = new Date();
+         var h = today.getHours();
+         if (h > 12) {h = h - 12};
+         var m = today.getMinutes();
+         m = checkTime(m);
+         document.getElementById('txt').innerHTML = h + ":" + m;
+         var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+         if (i < 10) {i = "0" + i};
+         return i;
+      }
+   </script>
+</head>
+
+<body onload = "startTime();">
+   <div id = "txt"></div>
+   <input onclick="change()" type="button" value="Audio - Interior" id="toggle" class="btn btn1 btna">
+   <a href = "beep.html"><button class="btn btn2 btna">Beep Beep</button></a>
+   <a href = "hard_hat.html"><button class="btn btn1 btnb">Air</button></a>
+   <a href = "main.php"><button class="btn btn2 btnb">Splish Splash</button></a>
+   <a href = "car_wash.html"><button class="btn btn1 btnc">Car Wash</button></a>
+   <a href = "skirt.html"><button class="btn btn2 btnc">Skirt Skirt</button></a>
+   <a href = "disco.html"><button class="btn3"><img id = "disco" src = "./resources/media/whale_emoji.png" alt = "Whale"></button></a>
+   <script>
+      function change() {
+         var elem = document.getElementById("toggle");
+         if (elem.value=="Audio - Interior") elem.value = "Audio - Exterior";
+         else if (elem.value=="Audio - Exterior") elem.value = "Audio - Both";
+         else elem.value = "Audio - Interior";
+      }
+   </script>
+</body>
+</html>
