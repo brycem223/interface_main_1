@@ -1,0 +1,105 @@
+html * {
+  cursor: none;
+}
+
+body {
+   color: black;
+   background-image: url("../media/stars.png");
+   background-size: 800px 480px;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+#txt {
+   font-size: 36px;
+   font-family: monospace;
+   font-weight: bold;
+   text-align: center;
+   color: white;
+   position: relative;
+   top: 20px;
+}
+
+.btn {
+   font-size: 24px;
+   color: white;
+   height: 60px;
+   width: 250px;
+   background-color: #363f4a;
+   border-style: solid;
+   border-color: white;
+   border-width: 1px;
+   border-radius: 15px;
+   position: relative;
+}
+
+button:focus {
+   outline: none;
+}
+
+.btn:focus {
+   outline: none;
+}
+
+.btn1 {
+   margin-left: 50px;
+   float: left;
+}
+
+.btn2 {
+   margin-right: 50px;
+   float: right;
+}
+
+.btna {
+   margin-top: 74px;
+}
+
+.btnb {
+   top: 30px;
+}
+
+.btnc {
+   top: 60px;
+}
+
+.btn3 {
+   height: 120px;
+   width: 120px;
+   position: relative;
+   left: 32px;
+   top: 134px;
+   background-color: #363f4a;
+   border-style: solid;
+   border-color: white;
+   border-width: 1px;
+   border-radius: 60px;
+}
+
+.btn4 {
+   height: 60px;
+   width: 60px;
+   border-radius: 37px;
+   border-width: 1px;
+   border-color: white;
+   border-style: solid;
+   position: absolute;
+   background-color: #d95555;
+   top: 13px;
+   left: 13px;
+}
+
+#powerOff {
+   height: 48px;
+   width: 48px;
+   position: absolute;
+   left: 5px;
+   top: 4px;
+}
+
+#disco {
+   height: 80px;
+   width: 80px;
+}
